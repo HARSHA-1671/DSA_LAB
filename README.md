@@ -1,13 +1,23 @@
-This repo contains all the lab experiments conducted in DSA LAB(BCSL305) of academic year 2k23-24 MITE.
-----------------------------------------------------------------------------------------------------------------------------------------
-COURSE NAME:DATA STRUCTURES LABORATORY\n
-COURSE CODE:BCSL305\n
-SEM:3RD\n
-YEAR:2K23-24\n
-CREDIT:1\n
-FACULTY:MRS.VASUDHA G RAO \n
-COURSE LEARNING OBJECTIVES:
-This laboratory course enables students to get practical experience in design, develop, implement, analyze and evaluation/testing of
-● Dynamic memory management
-● Linear data structures and their applications such as stacks, queues and lists
-● Non-Linear data structures and their applications such as trees and graphs
+## Welcome to the DSA Lab Repository - Where Data Structures Come to Life!
+
+---
+
+ ### 📘 Course Details:
+- **Course Name:** Data Structures Laboratory
+- **Course Code:** BCSL305
+- **Semester:** 3rd
+- **Academic Year:** 2K23-24
+- **Credit:** 1
+- **Faculty:** Mrs. Vasudha G. Rao
+
+---
+
+### 💡 Course Learning Objectives:
+Dive into the world of data structures and unleash your coding prowess as you tackle the following objectives:
+1. 🧠 **Dynamic Memory Management:** Master the art of memory allocation and deallocation dynamically.
+2. 🔄 **Linear Data Structures:** Delve into the realms of stacks, queues, and lists, understanding their applications and implementation intricacies.
+3. 🌐 **Non-Linear Data Structures:** Embark on a journey through trees and graphs, uncovering their diverse applications and solving complex problems with finesse.
+
+---
+
+With this repository as your guide, let's embark on an exhilarating journey through the dynamic landscape of data structures. Happy coding! 🚀
