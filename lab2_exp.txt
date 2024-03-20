@@ -1,0 +1,70 @@
+The stringmatch() function performs string matching using the naive string matching algorithm. It takes no arguments and modifies the global variables str, pat, rep, ans, flag, and i.
+
+The function initializes several variables to 0: i, m, c, j, and flag.
+
+i is the index used to iterate through the pattern string.
+m is the index used to iterate through the main string that is being matched against the pattern string.
+c is the index used to iterate through the main string and keep track of the current position.
+j is the index used to iterate through the result string.
+flag is a variable used to indicate whether the pattern string was found in the main string.
+The function enters a while loop that continues until the end of the main string is reached.
+
+Inside the loop, the function checks if the current character in the main string matches the current character in the pattern string.
+If the characters match, the function increments i and m, and checks if the end of the pattern string has been reached.
+If the end of the pattern string has been reached, the function sets flag to 1, and copies the replacement string into the result string.
+The function then resets i to 0 and sets c and m to the current position in the main string.
+If the characters do not match, the function copies the current character in the main string into the result string, and increments c and m.
+If the end of the main string is reached, the function sets the last character in the result string to the null character.
+The function performs string matching by iterating through each character in the main string and checking if it matches the current character in the pattern string. If the pattern string is found in the main string, the function replaces it with the replacement string. If the pattern string is not found in the main string, the function simply copies the main string into the result string. The function keeps track of the current position in the main string using the c and m variables. The i variable is used to
+------------
+-----------
+// Function to perform string matching
+void stringmatch()
+{
+    int i=0, m=0, c=0, j=0, flag=0; // Initialize variables
+
+    // `i` is the index for the pattern string
+    // `m` is the index for the main string that is being matched against the pattern string
+    // `c` is the index for the main string that keeps track of the current position
+    // `j` is the index for the result string
+    // `flag` is a variable to indicate whether a match was found
+
+    char ans[100]; // Initialize a character array to store the result string
+
+    // Loop through each character in the main string
+    while(str[c]!='\0')
+    {
+        // If the current character in the main string matches the current character in the pattern string
+        if(str[m]==pat[i])
+        {
+            // Increment the index for the pattern string
+            i++;
+            // Increment the index for the main string
+            m++;
+            if(pat[i]=='\0') // If the end of the pattern string is reached
+            {
+                // Set the flag to indicate a match was found
+                flag=1;
+                // Copy the replacement string into the result string
+                for(k=0;rep[k]!='\0';k++,j++)
+                    ans[j]=rep[k];
+                // Reset the index for the pattern string
+                i=0;
+                // Set the index for the main string to the current position
+                c=m;
+            }
+        }
+        else // If the current characters do not match
+        {
+            // Copy the current character from the main string into the result string
+            ans[j]=str[c];
+            // Increment the index for the result string
+            j++;
+            // Set the index for the main string to the current position
+            m=c;
+            // Reset the index for the pattern string
+            i=0;
+        }
+    }
+    // Set the last character in the result string to the null character
+    ans[j]='\0';
